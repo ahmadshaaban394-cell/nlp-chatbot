@@ -1,0 +1,59 @@
+Cross-Site Scripting XSS
+
+Definition:
+Cross-Site Scripting, usually called XSS, is a web security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users.
+
+XSS occurs when a web application includes untrusted data in a page without proper validation, escaping, or sanitization.
+
+How it works:
+An attacker submits malicious script-like content into a website. When another user opens the affected page, the browser executes the script as if it came from the trusted website.
+
+Types:
+- Stored XSS
+- Reflected XSS
+- DOM-based XSS
+
+Stored XSS:
+Stored XSS happens when malicious input is saved on the server, such as in comments, profiles, messages, or database records. Every user who views the infected content may execute the malicious script.
+
+Reflected XSS:
+Reflected XSS happens when malicious input is immediately reflected in the response, such as in search results or error messages. It often requires the victim to click a crafted link.
+
+DOM-based XSS:
+DOM-based XSS happens when client-side JavaScript modifies the page using unsafe data from the URL, fragment, or other browser sources.
+
+Impact:
+- Stealing cookies
+- Stealing session tokens
+- Account takeover
+- Performing actions as the victim
+- Redirecting users to fake websites
+- Defacing web pages
+- Keylogging
+- Spreading malware
+- Phishing inside a trusted website
+
+Example:
+A comment section allows users to post text. If the website displays the comment without escaping it, an attacker can insert script content that runs in other users' browsers.
+
+Why it is dangerous:
+XSS attacks run inside the victim's browser and can abuse the trust between the user and the website. If session cookies are not protected, attackers may hijack accounts.
+
+Prevention:
+- Escape output data
+- Validate user input
+- Sanitize HTML input
+- Use Content Security Policy
+- Use secure frameworks that auto-escape output
+- Avoid using innerHTML with untrusted data
+- Use HttpOnly and Secure cookie flags
+- Use SameSite cookies
+- Encode data based on context
+- Filter dangerous HTML attributes
+- Keep JavaScript libraries updated
+
+Difference between XSS and CSRF:
+XSS injects malicious scripts into a page. CSRF tricks an authenticated user into sending unwanted requests. XSS attacks browser execution, while CSRF abuses trust in the user's session.
+
+Related terms:
+Output encoding, input validation, browser security, Content Security Policy, session hijacking, web application security.

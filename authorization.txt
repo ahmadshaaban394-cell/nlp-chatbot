@@ -1,0 +1,52 @@
+Authorization
+
+Definition:
+Authorization is the process of deciding what an authenticated user is allowed to access or do.
+
+In simple words, authorization answers the question: What are you allowed to do?
+
+How it works:
+After a user logs in, the application checks the user's role, permissions, ownership, and access rules before allowing actions.
+
+Examples:
+- A student can view only their own grades
+- An admin can manage users
+- A parent can view only their child's bus location
+- A normal user cannot access admin pages
+- A customer can view only their own orders
+
+Types:
+- Role-based access control
+- Attribute-based access control
+- Permission-based access control
+- Object-level authorization
+
+Common vulnerabilities:
+- Broken access control
+- IDOR
+- Privilege escalation
+- Missing server-side permission checks
+- Relying only on frontend restrictions
+
+Impact:
+- Unauthorized data access
+- Data modification
+- Account takeover
+- Admin function abuse
+- Privacy violations
+
+Prevention:
+- Check permissions on the server side
+- Verify ownership for every object
+- Apply least privilege
+- Deny access by default
+- Test every protected endpoint
+- Do not rely only on hidden buttons or frontend checks
+- Use secure access control design
+- Log unauthorized attempts
+
+Difference between authentication and authorization:
+Authentication verifies who the user is. Authorization verifies what the user can access after login.
+
+Related terms:
+Access control, roles, permissions, IDOR, least privilege, security policy.

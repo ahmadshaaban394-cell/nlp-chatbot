@@ -1,0 +1,43 @@
+Denial of Service DoS
+
+Definition:
+A Denial of Service attack, called DoS, is an attack that tries to make a system, server, website, or network unavailable to legitimate users.
+
+DoS usually comes from one attacking source or a smaller number of sources compared to DDoS.
+
+How it works:
+The attacker sends too many requests, malformed packets, or resource-consuming operations to the target. The target becomes overloaded, crashes, or slows down.
+
+Types:
+- Flood attacks
+- Protocol abuse attacks
+- Application resource exhaustion
+- Crash attacks
+
+Impact:
+- Service downtime
+- Slow performance
+- Loss of availability
+- Business interruption
+- User frustration
+- Financial loss
+
+Example:
+An attacker sends a huge number of requests to a login page until the server cannot respond to real users.
+
+Difference between DoS and DDoS:
+DoS attacks normally come from one source. DDoS attacks come from many distributed sources such as a botnet.
+
+Prevention:
+- Rate limiting
+- Firewalls
+- Traffic filtering
+- Input validation
+- Resource limits
+- Monitoring and alerting
+- Load balancing
+- Intrusion prevention systems
+- Patch vulnerable services
+
+Related terms:
+Availability, network attack, flooding, resource exhaustion, DDoS, server security.

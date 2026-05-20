@@ -1,0 +1,58 @@
+NoSQL Injection
+
+Definition:
+NoSQL Injection is a security vulnerability that happens when attackers inject malicious input into queries used by NoSQL databases. It is similar to SQL Injection, but it targets NoSQL databases instead of relational SQL databases.
+
+NoSQL databases include MongoDB, CouchDB, Firebase, Cassandra, and other non-relational database systems.
+
+How it works:
+NoSQL Injection happens when an application places user input directly into a NoSQL query object without proper validation. Attackers may send special query operators, unexpected JSON structures, or crafted input to change the behavior of the query.
+
+Common attack locations:
+- Login forms
+- Search APIs
+- JSON request bodies
+- Filters
+- User profile endpoints
+- API parameters
+
+Types:
+- Authentication bypass
+- Query operator injection
+- JavaScript injection in database queries
+- Data extraction attacks
+- Logic manipulation attacks
+
+Impact:
+- Unauthorized access
+- Authentication bypass
+- Data leakage
+- Data manipulation
+- Account takeover
+- Exposure of private information
+- Application logic abuse
+
+Example:
+If a login system accepts JSON input directly and does not validate it, an attacker may send an object instead of a normal password string. This can make the database query match users without knowing the correct password.
+
+Why it is dangerous:
+NoSQL Injection can be hard to detect because many NoSQL queries are built using JSON-like objects. Developers may think NoSQL databases are immune to injection, but unsafe input handling can still cause serious vulnerabilities.
+
+Prevention:
+- Validate all input types
+- Reject unexpected objects and operators
+- Use strict schemas
+- Use secure query methods
+- Sanitize user input
+- Avoid executing user-controlled JavaScript in database queries
+- Use allowlists for accepted fields
+- Apply proper authentication and authorization checks
+- Use least privilege database permissions
+- Log suspicious request patterns
+- Keep database drivers updated
+
+Difference from SQL Injection:
+SQL Injection attacks SQL query syntax. NoSQL Injection attacks NoSQL query structures, JSON objects, operators, and document-based query logic.
+
+Related terms:
+MongoDB security, JSON injection, input validation, authentication bypass, API security, database security.

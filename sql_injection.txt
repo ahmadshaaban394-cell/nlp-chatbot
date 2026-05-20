@@ -1,0 +1,69 @@
+SQL Injection
+
+Definition:
+SQL Injection is a web security vulnerability that happens when an attacker inserts malicious SQL code into an application input. The malicious input becomes part of a database query and may change the intended meaning of the query.
+
+SQL Injection usually happens when a web application builds SQL queries by directly joining user input with SQL commands instead of using safe parameterized queries.
+
+How it works:
+A normal login query may check the username and password entered by the user. If the application does not validate or parameterize the input, an attacker can enter SQL fragments that change the condition of the query. This may allow the attacker to bypass login, read sensitive data, modify records, or delete data.
+
+Common attack locations:
+- Login forms
+- Search boxes
+- URL parameters
+- Product filters
+- Registration forms
+- Admin panels
+- API request parameters
+
+Types:
+- Classic SQL Injection
+- Error-based SQL Injection
+- Union-based SQL Injection
+- Boolean-based Blind SQL Injection
+- Time-based Blind SQL Injection
+- Out-of-band SQL Injection
+
+Impact:
+- Unauthorized access to user accounts
+- Bypass authentication
+- Data leakage
+- Data modification
+- Data deletion
+- Full database compromise
+- Possible server compromise
+- Loss of confidentiality, integrity, and availability
+
+Example:
+A vulnerable login form may create a query using user input directly. If an attacker enters input that changes the query condition, the database may return results even without the correct password.
+
+Why it is dangerous:
+SQL Injection can expose usernames, passwords, emails, payment information, and private records. In severe cases, it may allow attackers to control the entire database.
+
+Prevention:
+- Use prepared statements
+- Use parameterized queries
+- Validate all user input
+- Sanitize input when needed
+- Do not display detailed database errors to users
+- Use least privilege database accounts
+- Use ORM frameworks safely
+- Apply web application firewalls as an extra layer
+- Hash and salt passwords
+- Keep database software updated
+- Perform regular security testing
+
+Secure coding practices:
+- Never concatenate raw user input into SQL queries
+- Use placeholders for values
+- Separate code from data
+- Check input type, length, and format
+- Log suspicious input attempts
+- Review database permissions
+
+Difference from NoSQL Injection:
+SQL Injection targets SQL databases such as MySQL, PostgreSQL, Oracle, and SQL Server. NoSQL Injection targets NoSQL databases such as MongoDB.
+
+Related terms:
+Database security, input validation, prepared statements, parameterized queries, authentication bypass, web application security.

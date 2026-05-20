@@ -1,0 +1,78 @@
+Phishing
+
+Definition:
+Phishing is a social engineering attack where attackers trick people into revealing sensitive information or performing unsafe actions.
+
+Phishing usually uses fake emails, fake websites, fake messages, or fake login pages that look legitimate.
+
+How it works:
+The attacker pretends to be a trusted person, company, bank, university, delivery service, or technical support team. The victim is pressured to click a link, download an attachment, enter a password, or share sensitive information.
+
+Targets:
+- Usernames
+- Passwords
+- Credit card information
+- Bank account details
+- One-time passwords
+- Personal information
+- Company credentials
+- Student accounts
+- Email accounts
+
+Types:
+- Email phishing
+- Spear phishing
+- Whaling
+- Smishing
+- Vishing
+- Clone phishing
+- Business email compromise
+
+Spear phishing:
+A targeted phishing attack aimed at a specific person or organization.
+
+Whaling:
+A phishing attack targeting high-level people such as managers, executives, or administrators.
+
+Smishing:
+Phishing through SMS or text messages.
+
+Vishing:
+Phishing through voice calls.
+
+Impact:
+- Account takeover
+- Identity theft
+- Financial loss
+- Malware infection
+- Data breach
+- Unauthorized access to systems
+- Reputation damage
+
+Example:
+A user receives an email pretending to be from a bank. The email asks the user to log in through a link. The link opens a fake website that steals the user's credentials.
+
+Warning signs:
+- Urgent language
+- Suspicious links
+- Unexpected attachments
+- Sender address looks strange
+- Grammar mistakes
+- Requests for passwords
+- Too-good-to-be-true offers
+- Threats of account closure
+
+Prevention:
+- Verify email sources
+- Avoid clicking suspicious links
+- Check the website URL carefully
+- Use multi-factor authentication
+- Do not share passwords
+- Report suspicious messages
+- Use email filtering
+- Train users about phishing signs
+- Keep browsers and antivirus updated
+- Open websites by typing the address manually
+
+Related terms:
+Social engineering, spear phishing, fake login page, credential theft, MFA, awareness training.

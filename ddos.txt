@@ -1,0 +1,55 @@
+Distributed Denial of Service DDoS
+
+Definition:
+A Distributed Denial of Service attack, called DDoS, is an attack where many devices send large amounts of traffic to a target system to make it slow or unavailable.
+
+DDoS is distributed because the traffic comes from many sources, often infected devices controlled by an attacker.
+
+How it works:
+Attackers use a botnet, which is a group of compromised computers, servers, routers, or IoT devices. These devices send many requests or packets to the target at the same time. The target becomes overloaded and legitimate users cannot access it.
+
+Types:
+- Volumetric attacks
+- Protocol attacks
+- Application layer attacks
+
+Volumetric attacks:
+These attacks flood bandwidth with huge traffic volume.
+
+Protocol attacks:
+These attacks abuse network protocols and exhaust server or firewall resources.
+
+Application layer attacks:
+These attacks target web application functions such as login pages, search pages, or API endpoints.
+
+Impact:
+- Website downtime
+- Slow services
+- Loss of availability
+- Financial loss
+- Damaged reputation
+- Resource exhaustion
+- Business disruption
+- Increased infrastructure cost
+
+Example:
+An online shopping website receives millions of fake requests from infected devices. Real customers cannot access the website.
+
+Difference between DoS and DDoS:
+DoS usually uses one source to attack the target. DDoS uses many sources, making it harder to block and more powerful.
+
+Prevention:
+- Use rate limiting
+- Use traffic filtering
+- Use DDoS protection services
+- Use firewalls
+- Use intrusion detection and prevention systems
+- Use load balancing
+- Use content delivery networks
+- Monitor traffic patterns
+- Block suspicious IP ranges
+- Prepare incident response plans
+- Scale infrastructure when needed
+
+Related terms:
+Botnet, availability, network security, traffic filtering, CDN, rate limiting, incident response.

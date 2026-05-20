@@ -1,0 +1,49 @@
+Cross-Site Request Forgery CSRF
+
+Definition:
+Cross-Site Request Forgery, called CSRF, is a web security attack that tricks a logged-in user into performing an action they did not intend to perform.
+
+CSRF exploits the trust a website has in the user's browser. If a user is already logged in, the browser may automatically include cookies with requests.
+
+How it works:
+The victim logs into a legitimate website. Then the attacker tricks the victim into opening a malicious page or link. That page silently sends a request to the legitimate website using the victim's browser and session cookies.
+
+Common targets:
+- Change password forms
+- Change email forms
+- Money transfer actions
+- Account settings
+- Admin actions
+- Delete account actions
+- Posting content as the user
+
+Impact:
+- Unauthorized actions
+- Account setting changes
+- Account compromise
+- Data modification
+- Financial transactions
+- Administrative abuse
+
+Example:
+A logged-in user clicks a link from an attacker. The link silently sends a request to change the user's email address or password on a trusted website.
+
+Why it is dangerous:
+The request looks legitimate because it comes from the victim's browser and includes valid cookies. The server may not know that the user did not intentionally make the request.
+
+Prevention:
+- Use CSRF tokens
+- Verify request origin
+- Verify referer header as an additional check
+- Use SameSite cookies
+- Require re-authentication for sensitive actions
+- Use POST for state-changing requests
+- Do not allow sensitive actions through GET requests
+- Add confirmation steps for critical actions
+- Use secure session management
+
+Difference between CSRF and XSS:
+CSRF forces the user to send an unwanted request. XSS runs malicious script in the user's browser. XSS can sometimes be used to bypass CSRF defenses if the site is vulnerable.
+
+Related terms:
+Session security, CSRF token, SameSite cookies, authentication, web application security.

@@ -1,0 +1,63 @@
+Secure Coding Practices
+
+Definition:
+Secure coding means writing software in a way that reduces security vulnerabilities and protects users, data, and systems.
+
+Main goals:
+- Protect confidentiality
+- Protect integrity
+- Protect availability
+- Prevent unauthorized access
+- Reduce attack surface
+
+Input validation:
+Input validation checks user input before processing it. Applications should verify type, length, format, and allowed values.
+
+Output encoding:
+Output encoding prevents injected content from being interpreted as code. It is important for preventing XSS.
+
+Authentication:
+Use secure login systems, strong password hashing, and MFA.
+
+Authorization:
+Always check permissions on the server side. Do not rely on frontend buttons or hidden pages.
+
+Database security:
+Use prepared statements and parameterized queries. Avoid building queries with raw user input.
+
+Error handling:
+Do not show detailed errors to users. Log technical details securely for developers.
+
+Session security:
+Use secure cookies, HttpOnly, Secure, SameSite, expiration, and proper logout.
+
+File upload security:
+Validate file type, size, extension, and content. Store uploaded files safely and rename them.
+
+Secrets management:
+Do not hardcode passwords, API keys, or tokens in source code. Use environment variables or secret managers.
+
+Logging:
+Log important events such as failed login attempts, permission failures, suspicious inputs, and admin actions.
+
+Security testing:
+Perform code review, vulnerability scanning, penetration testing, and dependency checking.
+
+Best practices:
+- Validate input
+- Escape output
+- Use prepared statements
+- Use MFA
+- Hash passwords
+- Apply least privilege
+- Keep dependencies updated
+- Use HTTPS
+- Protect sessions
+- Secure APIs
+- Backup data
+- Monitor logs
+- Use secure frameworks
+- Follow OWASP guidelines
+
+Related terms:
+Secure software development, application security, OWASP, vulnerability prevention, code review.

@@ -1,0 +1,42 @@
+XML External Entity XXE
+
+Definition:
+XML External Entity, called XXE, is a vulnerability that happens when an XML parser processes external entities in an unsafe way.
+
+XXE can allow attackers to read local files, access internal systems, or cause denial of service.
+
+How it works:
+XML supports entities that can reference external resources. If a parser allows external entities, an attacker can submit malicious XML that asks the server to load local files or internal URLs.
+
+Common vulnerable features:
+- XML upload
+- SOAP APIs
+- Document import
+- SAML processing
+- XML-based configuration
+- Old API integrations
+
+Impact:
+- Local file disclosure
+- Sensitive data exposure
+- Server-side request forgery
+- Denial of service
+- Internal network scanning
+- Possible credential leakage
+
+Example:
+An application accepts XML input and parses it with external entities enabled. An attacker submits XML that references a sensitive local file. The server processes it and may reveal the file contents.
+
+Prevention:
+- Disable external entity processing
+- Disable DTDs when not needed
+- Use secure XML parsers
+- Validate XML input
+- Use simpler data formats such as JSON when possible
+- Keep XML libraries updated
+- Limit parser permissions
+- Avoid returning parser errors to users
+- Use allowlists for accepted XML structures
+
+Related terms:
+XML parser, DTD, external entity, file disclosure, SSRF, secure parsing.

@@ -1,0 +1,65 @@
+Authentication
+
+Definition:
+Authentication is the process of verifying the identity of a user, system, or device.
+
+In simple words, authentication answers the question: Who are you?
+
+Examples:
+- Logging in with email and password
+- Using fingerprint authentication
+- Entering a one-time password
+- Using a smart card
+- Signing in with Google or Microsoft
+
+Authentication factors:
+- Something you know: password or PIN
+- Something you have: phone, token, smart card
+- Something you are: fingerprint, face, iris
+
+Multi-factor authentication:
+Multi-factor authentication, called MFA, uses two or more authentication factors. MFA makes accounts more secure because stealing only the password is not enough.
+
+Common attacks:
+- Brute force attacks
+- Credential stuffing
+- Password spraying
+- Phishing
+- Session hijacking
+- Weak password guessing
+- Account enumeration
+
+Brute force:
+An attacker tries many password combinations until one works.
+
+Credential stuffing:
+An attacker uses leaked usernames and passwords from other websites to try logging in.
+
+Password spraying:
+An attacker tries a few common passwords against many accounts.
+
+Impact of weak authentication:
+- Account takeover
+- Unauthorized access
+- Data breach
+- Privilege escalation
+- Identity theft
+
+Prevention:
+- Use strong password policies
+- Use multi-factor authentication
+- Hash and salt passwords
+- Rate limit login attempts
+- Lock accounts temporarily after many failed attempts
+- Use secure password reset flows
+- Do not reveal whether email exists
+- Monitor suspicious login activity
+- Use HTTPS
+- Protect session cookies
+- Use secure authentication libraries
+
+Difference between authentication and authorization:
+Authentication verifies identity. Authorization decides what the authenticated user is allowed to access.
+
+Related terms:
+Login security, password hashing, MFA, session management, authorization, access control.

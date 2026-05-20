@@ -1,0 +1,69 @@
+Common Cybersecurity Attacks
+
+Definition:
+Cybersecurity attacks are actions performed by attackers to steal data, disrupt systems, gain unauthorized access, or damage digital services.
+
+Common attacks:
+- SQL Injection
+- NoSQL Injection
+- Cross-Site Scripting
+- Cross-Site Request Forgery
+- Phishing
+- Malware
+- Ransomware
+- Denial of Service
+- Distributed Denial of Service
+- Insecure Direct Object Reference
+- Server-Side Request Forgery
+- XML External Entity
+- Brute force
+- Credential stuffing
+- Man-in-the-middle attack
+- Password spraying
+- Session hijacking
+- Broken access control
+
+SQL Injection:
+An attacker injects malicious SQL into database queries.
+
+XSS:
+An attacker injects malicious scripts into web pages.
+
+CSRF:
+An attacker tricks a logged-in user into sending unwanted requests.
+
+Phishing:
+An attacker tricks users into revealing sensitive information.
+
+Malware:
+Malicious software that harms systems or steals data.
+
+DDoS:
+Many devices flood a target to make it unavailable.
+
+IDOR:
+A user changes an object ID and accesses unauthorized data.
+
+SSRF:
+An attacker tricks the server into sending requests to internal or unintended resources.
+
+XXE:
+A vulnerable XML parser processes malicious external entities.
+
+General prevention:
+- Validate input
+- Escape output
+- Use prepared statements
+- Use authentication and authorization
+- Apply least privilege
+- Use HTTPS
+- Use MFA
+- Keep systems updated
+- Monitor logs
+- Backup data
+- Train users
+- Use firewalls and security tools
+- Perform regular testing
+
+Related terms:
+Web security, network security, application security, database security, secure coding, risk management.

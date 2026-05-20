@@ -1,0 +1,48 @@
+Insecure Direct Object Reference IDOR
+
+Definition:
+Insecure Direct Object Reference, called IDOR, is an access control vulnerability that happens when an application exposes internal object references and does not properly check whether the user is allowed to access them.
+
+An object reference may be a user ID, file ID, order ID, invoice ID, or database record ID.
+
+How it works:
+A user accesses a URL or API endpoint containing an identifier. If the application only checks that the user is logged in but does not verify ownership or permission, the user may change the identifier and access someone else's data.
+
+Common locations:
+- Profile pages
+- Download links
+- Invoice pages
+- Order details
+- Student records
+- API endpoints
+- Admin panels
+- File access routes
+
+Impact:
+- Unauthorized access
+- Data leakage
+- Account data exposure
+- Privacy violation
+- Data modification
+- Horizontal privilege escalation
+- Vertical privilege escalation if admin resources are exposed
+
+Example:
+A user opens a URL like /profile?id=10. If the user changes the ID to 11 and sees another user's profile, the application has an IDOR vulnerability.
+
+Why it is dangerous:
+IDOR is often simple to exploit because attackers only need to change numbers or identifiers in URLs or requests.
+
+Prevention:
+- Implement access control checks on every request
+- Verify object ownership
+- Use server-side authorization
+- Do not trust client-side checks
+- Use indirect references when appropriate
+- Use unpredictable identifiers as an extra layer
+- Test all API endpoints
+- Apply least privilege principles
+- Log suspicious access attempts
+
+Related terms:
+Access control, authorization, broken access control, object reference, API security, privilege escalation.

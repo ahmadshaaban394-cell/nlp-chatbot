@@ -1,0 +1,58 @@
+Web Application Security
+
+Definition:
+Web application security is the practice of protecting websites, web apps, and APIs from cyber attacks.
+
+Common web vulnerabilities:
+- SQL Injection
+- NoSQL Injection
+- XSS
+- CSRF
+- IDOR
+- SSRF
+- XXE
+- Broken authentication
+- Broken access control
+- Security misconfiguration
+- Sensitive data exposure
+- Insecure file upload
+
+Important defenses:
+- Input validation
+- Output encoding
+- Authentication
+- Authorization
+- Prepared statements
+- CSRF tokens
+- Content Security Policy
+- Secure cookies
+- HTTPS
+- Rate limiting
+- Logging and monitoring
+- Secure error handling
+- Dependency updates
+
+Security headers:
+- Content-Security-Policy
+- X-Frame-Options
+- X-Content-Type-Options
+- Strict-Transport-Security
+- Referrer-Policy
+
+API security:
+APIs should verify authentication, authorization, input validation, rate limits, and proper error handling. Sensitive data should not be exposed in responses.
+
+Session security:
+Sessions should use secure cookies, proper expiration, logout, and protection against session hijacking.
+
+File upload security:
+Uploaded files should be validated, scanned, renamed, and stored outside public execution paths.
+
+Password security:
+Passwords should be hashed with strong algorithms and salts. They should never be stored in plain text.
+
+Monitoring:
+Applications should log suspicious requests, failed logins, access control failures, and abnormal traffic.
+
+Related terms:
+OWASP, secure coding, API security, authentication, authorization, vulnerability testing.

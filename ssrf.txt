@@ -1,0 +1,44 @@
+Server-Side Request Forgery SSRF
+
+Definition:
+Server-Side Request Forgery, called SSRF, is a vulnerability where an attacker tricks a server into making requests to unintended locations.
+
+SSRF happens when an application accepts a URL or address from the user and the server fetches it without proper validation.
+
+How it works:
+The attacker provides a malicious URL as input. The server sends a request to that URL. The attacker may use this to access internal services, cloud metadata, localhost resources, or private network systems that are not directly accessible from the internet.
+
+Common vulnerable features:
+- URL preview tools
+- Image fetchers
+- Webhooks
+- File import from URL
+- PDF generators
+- API integrations
+- Server-side crawlers
+
+Impact:
+- Access to internal systems
+- Exposure of cloud metadata
+- Internal port scanning
+- Sensitive data leakage
+- Bypass of firewall restrictions
+- Possible remote code execution in severe cases
+
+Example:
+A website allows users to enter an image URL. Instead of an image URL, an attacker enters a URL pointing to an internal admin service. The server fetches it and reveals private information.
+
+Prevention:
+- Validate and allowlist trusted domains
+- Block private IP ranges
+- Block localhost and internal addresses
+- Do not allow arbitrary URLs
+- Use network segmentation
+- Disable redirects or validate redirect destinations
+- Limit protocols to http and https
+- Use SSRF protection in cloud environments
+- Apply strict outbound firewall rules
+- Log server-side requests
+
+Related terms:
+Cloud metadata, internal network, URL validation, allowlist, network segmentation, web security.

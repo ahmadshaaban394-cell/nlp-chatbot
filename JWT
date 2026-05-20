@@ -1,0 +1,68 @@
+JSON Web Token JWT
+
+Definition:
+JSON Web Token, called JWT, is a compact token format used to securely transmit information between parties as a JSON object.
+
+JWT is often used for authentication and authorization in web applications and APIs.
+
+Structure:
+A JWT usually has three parts:
+- Header
+- Payload
+- Signature
+
+Header:
+The header usually contains the token type and signing algorithm.
+
+Payload:
+The payload contains claims. Claims are pieces of information about the user or token, such as user ID, role, expiration time, and issuer.
+
+Signature:
+The signature verifies that the token was not changed. It is created using the header, payload, and a secret or private key.
+
+How it works:
+After login, the server creates a JWT and sends it to the client. The client stores the token and sends it with future requests. The server verifies the token before allowing access.
+
+Common claims:
+- sub: subject or user ID
+- exp: expiration time
+- iat: issued at time
+- iss: issuer
+- aud: audience
+- role: user role
+
+Security risks:
+- Stolen tokens
+- Weak signing secrets
+- Missing expiration
+- Accepting unsigned tokens
+- Algorithm confusion attacks
+- Storing tokens insecurely
+- Putting sensitive data in the payload
+- Not validating issuer or audience
+
+Impact of weak JWT security:
+- Account takeover
+- Unauthorized API access
+- Privilege escalation
+- Session hijacking
+- Data exposure
+
+Prevention:
+- Use strong secrets or secure private keys
+- Set short expiration times
+- Validate token signature
+- Validate issuer and audience
+- Do not store sensitive data in the payload
+- Use HTTPS
+- Store tokens securely
+- Rotate keys when needed
+- Reject unsigned tokens
+- Use refresh tokens carefully
+- Revoke tokens when necessary
+
+Important note:
+JWT payload is encoded, not encrypted. Anyone who has the token can decode and read the payload unless encryption is used.
+
+Related terms:
+Authentication, authorization, bearer token, API security, session management, access token, refresh token.
